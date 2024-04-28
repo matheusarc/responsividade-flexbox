@@ -1,0 +1,75 @@
+body{
+    background-image: url(../../img/bg_02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.main{
+    margin: auto;
+    font-size: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: #ffffff;
+}
+.header{
+    padding: 30px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+}
+.header h1{
+    text-transform: uppercase;
+    border-top: 1px dashed white;
+}
+.header p{
+    font-size: 15px;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+.banner img{
+    width: 100%;
+}
+.content{
+    display: flex;
+}
+.box{
+    padding: 15px;
+}
+.box h2{
+    border-bottom: 2px solid black;
+}
+.footer{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/* RESPONSIVIDADE UTILIZANDO FLEXBOX */
+@media screen and (max-width: 900px) {
+    .main{
+        width: 85%;
+    }
+    .content{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-image: none;
+    }
+    .main{
+        width: auto;
+        font-size: 14px;
+    }
+    .content{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
